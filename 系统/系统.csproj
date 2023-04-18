@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{74A860E4-7079-4BB1-AF66-00324D45B37D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>系统</RootNamespace>
+    <AssemblyName>系统</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\输出\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="加密解密\加密解密.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="加密解密\加密解密.Designer.cs">
+      <DependentUpon>加密解密.cs</DependentUpon>
+    </Compile>
+    <Compile Include="密码设置\密码设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="密码设置\密码设置.Designer.cs">
+      <DependentUpon>密码设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日志管理\文本日志.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日志管理\文本日志.Designer.cs">
+      <DependentUpon>文本日志.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日志管理\日志查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日志管理\日志查询.Designer.cs">
+      <DependentUpon>日志查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="枚举维护\枚举维护.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="枚举维护\枚举维护.Designer.cs">
+      <DependentUpon>枚举维护.cs</DependentUpon>
+    </Compile>
+    <Compile Include="枚举维护\枚举维护_枚举值新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="枚举维护\枚举维护_枚举值新增.Designer.cs">
+      <DependentUpon>枚举维护_枚举值新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="枚举维护\枚举维护_枚举新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="枚举维护\枚举维护_枚举新增.Designer.cs">
+      <DependentUpon>枚举维护_枚举新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程代理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程代理.Designer.cs">
+      <DependentUpon>流程代理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程代理人_选择.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程代理人_选择.Designer.cs">
+      <DependentUpon>流程代理人_选择.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程代理明细.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程代理明细.Designer.cs">
+      <DependentUpon>流程代理明细.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程代理记录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程代理记录.Designer.cs">
+      <DependentUpon>流程代理记录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程查询.Designer.cs">
+      <DependentUpon>流程查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程设计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程设计.Designer.cs">
+      <DependentUpon>流程设计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程设计_条件新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程设计_条件新增.Designer.cs">
+      <DependentUpon>流程设计_条件新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程设计_活动新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程设计_活动新增.Designer.cs">
+      <DependentUpon>流程设计_活动新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程设计_流程新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程设计_流程新增.Designer.cs">
+      <DependentUpon>流程设计_流程新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程设计_节点新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程设计_节点新增.Designer.cs">
+      <DependentUpon>流程设计_节点新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程设计_节点移动.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程设计_节点移动.Designer.cs">
+      <DependentUpon>流程设计_节点移动.cs</DependentUpon>
+    </Compile>
+    <Compile Include="流程管理\流程设计_视图配置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="流程管理\流程设计_视图配置.Designer.cs">
+      <DependentUpon>流程设计_视图配置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限\权限分配.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限\权限分配.Designer.cs">
+      <DependentUpon>权限分配.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限\查看密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限\查看密码.Designer.cs">
+      <DependentUpon>查看密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限\用户_新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限\用户_新增.Designer.cs">
+      <DependentUpon>用户_新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户权限\用户权限.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户权限\用户权限.Designer.cs">
+      <DependentUpon>用户权限.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统发布\系统文件.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统发布\系统文件.Designer.cs">
+      <DependentUpon>系统文件.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统发布\系统文件_发布.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统发布\系统文件_发布.Designer.cs">
+      <DependentUpon>系统文件_发布.cs</DependentUpon>
+    </Compile>
+    <Compile Include="菜单维护\按钮_新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="菜单维护\按钮_新增.Designer.cs">
+      <DependentUpon>按钮_新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="菜单维护\菜单_新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="菜单维护\菜单_新增.Designer.cs">
+      <DependentUpon>菜单_新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="菜单维护\菜单维护.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="菜单维护\菜单维护.Designer.cs">
+      <DependentUpon>菜单维护.cs</DependentUpon>
+    </Compile>
+    <Compile Include="部门管理\部门.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="部门管理\部门.Designer.cs">
+      <DependentUpon>部门.cs</DependentUpon>
+    </Compile>
+    <Compile Include="部门管理\部门_新增.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="部门管理\部门_新增.Designer.cs">
+      <DependentUpon>部门_新增.cs</DependentUpon>
+    </Compile>
+    <Compile Include="需求管理\需求管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="需求管理\需求管理.Designer.cs">
+      <DependentUpon>需求管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="需求管理\需求管理_编辑.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="需求管理\需求管理_编辑.Designer.cs">
+      <DependentUpon>需求管理_编辑.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="加密解密\加密解密.resx">
+      <DependentUpon>加密解密.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="密码设置\密码设置.resx">
+      <DependentUpon>密码设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日志管理\文本日志.resx">
+      <DependentUpon>文本日志.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日志管理\日志查询.resx">
+      <DependentUpon>日志查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枚举维护\枚举维护.resx">
+      <DependentUpon>枚举维护.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枚举维护\枚举维护_枚举值新增.resx">
+      <DependentUpon>枚举维护_枚举值新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="枚举维护\枚举维护_枚举新增.resx">
+      <DependentUpon>枚举维护_枚举新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程代理.resx">
+      <DependentUpon>流程代理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程代理人_选择.resx">
+      <DependentUpon>流程代理人_选择.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程代理明细.resx">
+      <DependentUpon>流程代理明细.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程代理记录.resx">
+      <DependentUpon>流程代理记录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程查询.resx">
+      <DependentUpon>流程查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程设计.resx">
+      <DependentUpon>流程设计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程设计_条件新增.resx">
+      <DependentUpon>流程设计_条件新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程设计_活动新增.resx">
+      <DependentUpon>流程设计_活动新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程设计_流程新增.resx">
+      <DependentUpon>流程设计_流程新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程设计_节点新增.resx">
+      <DependentUpon>流程设计_节点新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程设计_节点移动.resx">
+      <DependentUpon>流程设计_节点移动.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="流程管理\流程设计_视图配置.resx">
+      <DependentUpon>流程设计_视图配置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限\权限分配.resx">
+      <DependentUpon>权限分配.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限\查看密码.resx">
+      <DependentUpon>查看密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限\用户_新增.resx">
+      <DependentUpon>用户_新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户权限\用户权限.resx">
+      <DependentUpon>用户权限.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统发布\系统文件.resx">
+      <DependentUpon>系统文件.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统发布\系统文件_发布.resx">
+      <DependentUpon>系统文件_发布.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜单维护\按钮_新增.resx">
+      <DependentUpon>按钮_新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜单维护\菜单_新增.resx">
+      <DependentUpon>菜单_新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜单维护\菜单维护.resx">
+      <DependentUpon>菜单维护.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="部门管理\部门.resx">
+      <DependentUpon>部门.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="部门管理\部门_新增.resx">
+      <DependentUpon>部门_新增.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="需求管理\需求管理.resx">
+      <DependentUpon>需求管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="需求管理\需求管理_编辑.resx">
+      <DependentUpon>需求管理_编辑.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\框架\框架.csproj">
+      <Project>{730f6ddf-1fae-4f66-9fe8-df28da2f07f3}</Project>
+      <Name>框架</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

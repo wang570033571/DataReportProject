@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{730F6DDF-1FAE-4F66-9FE8-DF28DA2F07F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>框架</RootNamespace>
+    <AssemblyName>框架</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\输出\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExcelOper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL.cs" />
+    <Compile Include="XML操作.cs" />
+    <Compile Include="上传下载.cs" />
+    <Compile Include="基本操作窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本操作窗体.Designer.cs">
+      <DependentUpon>基本操作窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="加密解密.cs" />
+    <Compile Include="图标.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="图标.designer.cs">
+      <DependentUpon>图标.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本查询窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本查询窗体.Designer.cs">
+      <DependentUpon>基本查询窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本窗体.Designer.cs">
+      <DependentUpon>基本窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="字段配置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="字段配置.Designer.cs">
+      <DependentUpon>字段配置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="按钮图标.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>按钮图标.resx</DependentUpon>
+    </Compile>
+    <Compile Include="数据窗口.cs" />
+    <Compile Include="文件操作.cs" />
+    <Compile Include="消息.cs" />
+    <Compile Include="消息窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="消息窗体.Designer.cs">
+      <DependentUpon>消息窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="输入框.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="输入框.Designer.cs">
+      <DependentUpon>输入框.cs</DependentUpon>
+    </Compile>
+    <Compile Include="选择数据.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="选择数据.Designer.cs">
+      <DependentUpon>选择数据.cs</DependentUpon>
+    </Compile>
+    <Compile Include="配置文件.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="基本操作窗体.resx">
+      <DependentUpon>基本操作窗体.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="图标.resx">
+      <DependentUpon>图标.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本查询窗体.resx">
+      <DependentUpon>基本查询窗体.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本窗体.resx">
+      <DependentUpon>基本窗体.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="字段配置.resx">
+      <DependentUpon>字段配置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="按钮图标.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>按钮图标.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="消息窗体.resx">
+      <DependentUpon>消息窗体.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="输入框.resx">
+      <DependentUpon>输入框.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="选择数据.resx">
+      <DependentUpon>选择数据.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.xml" />
+    <Content Include="Resources\一级菜单.png" />
+    <Content Include="Resources\上.ico" />
+    <Content Include="Resources\上一步.ico" />
+    <Content Include="Resources\上传.ico" />
+    <Content Include="Resources\下.ico" />
+    <Content Include="Resources\下一步.ico" />
+    <Content Include="Resources\下载.ico" />
+    <Content Include="Resources\下载附件.ico" />
+    <None Include="Resources\中止.ico" />
+    <Content Include="Resources\人次.ico" />
+    <None Include="Resources\任务下发.ico" />
+    <Content Include="Resources\保存.ico" />
+    <Content Include="Resources\保存.png" />
+    <Content Include="Resources\停止.ico" />
+    <Content Include="Resources\关闭.ico" />
+    <Content Include="Resources\关闭.png" />
+    <Content Include="Resources\减.ico" />
+    <Content Include="Resources\删除.ico" />
+    <None Include="Resources\删除节点 .ico" />
+    <Content Include="Resources\删除附件.ico" />
+    <Content Include="Resources\刷新.ico" />
+    <Content Include="Resources\加.ico" />
+    <Content Include="Resources\单人.ico" />
+    <Content Include="Resources\发布新版.ico" />
+    <Content Include="Resources\发送.ico" />
+    <Content Include="Resources\右.ico" />
+    <Content Include="Resources\图.ico" />
+    <Content Include="Resources\复制.ico" />
+    <Content Include="Resources\多人.ico" />
+    <Content Include="Resources\审核.ico" />
+    <Content Include="Resources\导入.ico" />
+    <Content Include="Resources\导入.png" />
+    <Content Include="Resources\导出.ico" />
+    <Content Include="Resources\左.ico" />
+    <Content Include="Resources\开始.ico" />
+    <Content Include="Resources\开始.png" />
+    <Content Include="Resources\打印.ico" />
+    <Content Include="Resources\打开.ico" />
+    <None Include="Resources\批量保存.ico" />
+    <Content Include="Resources\提交.ico" />
+    <Content Include="Resources\新增.ico" />
+    <None Include="Resources\新增节点.ico" />
+    <Content Include="Resources\新增附件.ico" />
+    <Content Include="Resources\无效.ico" />
+    <Content Include="Resources\暂停.ico" />
+    <Content Include="Resources\最上.ico" />
+    <Content Include="Resources\最下.ico" />
+    <Content Include="Resources\最右.ico" />
+    <Content Include="Resources\最左.ico" />
+    <Content Include="Resources\有效.ico" />
+    <Content Include="Resources\权限.ico" />
+    <Content Include="Resources\查看密码.ico" />
+    <Content Include="Resources\查询.ico" />
+    <Content Include="Resources\查询.png" />
+    <Content Include="Resources\清空.ico" />
+    <Content Include="Resources\确认.ico" />
+    <None Include="Resources\移动节点.ico" />
+    <Content Include="Resources\编辑.ico" />
+    <None Include="Resources\编辑节点 .ico" />
+    <Content Include="Resources\设置.ico" />
+    <Content Include="Resources\退提交.ico" />
+    <Content Include="Resources\退确认.ico" />
+    <None Include="Resources\选择.ico" />
+    <Content Include="Resources\重置密码.ico" />
+    <Content Include="Resources\附件.ico" />
+    <Content Include="Resources\驳回.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

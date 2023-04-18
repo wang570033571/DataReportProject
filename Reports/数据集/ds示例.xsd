@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds示例" targetNamespace="http://tempuri.org/ds示例.xsd" xmlns:mstns="http://tempuri.org/ds示例.xsd" xmlns="http://tempuri.org/ds示例.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds示例" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ds示例" msprop:Generator_UserDSName="ds示例" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v示例" msprop:Generator_UserTableName="v示例" msprop:Generator_RowDeletedName="v示例RowDeleted" msprop:Generator_TableClassName="v示例DataTable" msprop:Generator_RowChangedName="v示例RowChanged" msprop:Generator_RowClassName="v示例Row" msprop:Generator_RowChangingName="v示例RowChanging" msprop:Generator_RowEvArgName="v示例RowChangeEvent" msprop:Generator_RowEvHandlerName="v示例RowChangeEventHandler" msprop:Generator_TablePropName="v示例" msprop:Generator_TableVarName="tablev示例" msprop:Generator_RowDeletingName="v示例RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fID" msprop:Generator_UserColumnName="fID" msprop:Generator_ColumnPropNameInRow="fID" msprop:Generator_ColumnVarNameInTable="columnfID" msprop:Generator_ColumnPropNameInTable="fIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="名称" msprop:Generator_UserColumnName="名称" msprop:Generator_ColumnPropNameInRow="名称" msprop:Generator_ColumnVarNameInTable="column名称" msprop:Generator_ColumnPropNameInTable="名称Column" type="xs:string" minOccurs="0" />
+              <xs:element name="制单日期" msprop:Generator_UserColumnName="制单日期" msprop:Generator_ColumnPropNameInRow="制单日期" msprop:Generator_ColumnVarNameInTable="column制单日期" msprop:Generator_ColumnPropNameInTable="制单日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="制单人" msprop:Generator_UserColumnName="制单人" msprop:Generator_ColumnPropNameInRow="制单人" msprop:Generator_ColumnVarNameInTable="column制单人" msprop:Generator_ColumnPropNameInTable="制单人Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
