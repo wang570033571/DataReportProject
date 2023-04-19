@@ -344,8 +344,8 @@ namespace ERP
         private void 工作中心_Shown(object sender, EventArgs e)
         {
             初始化菜单();
-            初始化任务();
-            初始化收藏(); 
+            //初始化任务();
+            //初始化收藏(); 
             //string 用户默认标签;
             //用户默认标签 = SQL.取值(SQL.DB.Report_DB, "Select 标签 from 用户默认任务标签 With (Nolock) Where 用户ID = " + SQL.引号(SQL.操作员ID) + " And 窗体=" + SQL.引号(this.Name), "文本日志");
             //if (用户默认标签 == "") 用户默认标签 = "5";
