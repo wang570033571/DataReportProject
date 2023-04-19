@@ -1,6 +1,6 @@
 ﻿namespace ERP
 {
-    partial class 工作中心
+    partial class 工作中心New
     {
         /// <summary>
         /// Required designer variable.
@@ -161,7 +161,7 @@
             // 
             this.sc窗体.Panel2.Controls.Add(this.sc任务菜单);
             this.sc窗体.Size = new System.Drawing.Size(900, 548);
-            this.sc窗体.SplitterDistance = 185;
+            this.sc窗体.SplitterDistance = 143;
             this.sc窗体.TabIndex = 0;
             // 
             // tv1
@@ -173,7 +173,7 @@
             this.tv1.Location = new System.Drawing.Point(0, 0);
             this.tv1.Name = "tv1";
             this.tv1.SelectedImageIndex = 0;
-            this.tv1.Size = new System.Drawing.Size(185, 548);
+            this.tv1.Size = new System.Drawing.Size(143, 548);
             this.tv1.TabIndex = 0;
             this.tv1.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.tv1_ItemDrag);
             this.tv1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tv1_NodeMouseDoubleClick);
@@ -206,10 +206,9 @@
             // sc任务菜单.Panel2
             // 
             this.sc任务菜单.Panel2.Controls.Add(this.tc1);
-            this.sc任务菜单.Size = new System.Drawing.Size(711, 548);
+            this.sc任务菜单.Size = new System.Drawing.Size(753, 548);
             this.sc任务菜单.SplitterDistance = 143;
             this.sc任务菜单.TabIndex = 0;
-            this.sc任务菜单.Visible = false;
             // 
             // tv2
             // 
@@ -312,7 +311,7 @@
             this.tc1.Location = new System.Drawing.Point(0, 0);
             this.tc1.Name = "tc1";
             this.tc1.SelectedIndex = 0;
-            this.tc1.Size = new System.Drawing.Size(564, 548);
+            this.tc1.Size = new System.Drawing.Size(606, 548);
             this.tc1.TabIndex = 0;
             this.tc1.SelectedIndexChanged += new System.EventHandler(this.tc1_SelectedIndexChanged);
             // 
@@ -323,7 +322,7 @@
             this.tp任务.Location = new System.Drawing.Point(4, 22);
             this.tp任务.Name = "tp任务";
             this.tp任务.Padding = new System.Windows.Forms.Padding(3);
-            this.tp任务.Size = new System.Drawing.Size(556, 522);
+            this.tp任务.Size = new System.Drawing.Size(598, 522);
             this.tp任务.TabIndex = 0;
             this.tp任务.Text = "审批";
             this.tp任务.UseVisualStyleBackColor = true;
@@ -344,7 +343,7 @@
             // sc任务.Panel2
             // 
             this.sc任务.Panel2.Controls.Add(this.sc任务明细);
-            this.sc任务.Size = new System.Drawing.Size(550, 472);
+            this.sc任务.Size = new System.Drawing.Size(592, 472);
             this.sc任务.SplitterDistance = 264;
             this.sc任务.TabIndex = 1;
             // 
@@ -377,8 +376,8 @@
             // sc任务汇总.Panel2
             // 
             this.sc任务汇总.Panel2.Controls.Add(this.gc任务);
-            this.sc任务汇总.Size = new System.Drawing.Size(550, 247);
-            this.sc任务汇总.SplitterDistance = 151;
+            this.sc任务汇总.Size = new System.Drawing.Size(592, 247);
+            this.sc任务汇总.SplitterDistance = 163;
             this.sc任务汇总.TabIndex = 3;
             // 
             // gc任务汇总
@@ -388,7 +387,7 @@
             this.gc任务汇总.Location = new System.Drawing.Point(0, 0);
             this.gc任务汇总.MainView = this.gv任务汇总;
             this.gc任务汇总.Name = "gc任务汇总";
-            this.gc任务汇总.Size = new System.Drawing.Size(151, 247);
+            this.gc任务汇总.Size = new System.Drawing.Size(163, 247);
             this.gc任务汇总.TabIndex = 4;
             this.gc任务汇总.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv任务汇总,
@@ -419,7 +418,7 @@
             this.gc任务.Location = new System.Drawing.Point(0, 0);
             this.gc任务.MainView = this.gv任务;
             this.gc任务.Name = "gc任务";
-            this.gc任务.Size = new System.Drawing.Size(395, 247);
+            this.gc任务.Size = new System.Drawing.Size(425, 247);
             this.gc任务.TabIndex = 3;
             this.gc任务.Tag = "";
             this.tip.SetToolTip(this.gc任务, "任务");
@@ -452,7 +451,7 @@
             this.lbl流程进度.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbl流程进度.Location = new System.Drawing.Point(0, 247);
             this.lbl流程进度.Name = "lbl流程进度";
-            this.lbl流程进度.Size = new System.Drawing.Size(550, 17);
+            this.lbl流程进度.Size = new System.Drawing.Size(592, 17);
             this.lbl流程进度.TabIndex = 4;
             this.lbl流程进度.Text = "流程进度:";
             this.lbl流程进度.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -471,7 +470,7 @@
             // sc任务明细.Panel2
             // 
             this.sc任务明细.Panel2.Controls.Add(this.gc任务表体);
-            this.sc任务明细.Size = new System.Drawing.Size(550, 204);
+            this.sc任务明细.Size = new System.Drawing.Size(592, 204);
             this.sc任务明细.SplitterDistance = 74;
             this.sc任务明细.TabIndex = 1;
             // 
@@ -482,7 +481,7 @@
             this.gc任务表头.Location = new System.Drawing.Point(0, 0);
             this.gc任务表头.MainView = this.gv任务表头;
             this.gc任务表头.Name = "gc任务表头";
-            this.gc任务表头.Size = new System.Drawing.Size(550, 74);
+            this.gc任务表头.Size = new System.Drawing.Size(592, 74);
             this.gc任务表头.TabIndex = 1;
             this.gc任务表头.Tag = "";
             this.gc任务表头.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -514,7 +513,7 @@
             this.gc任务表体.Location = new System.Drawing.Point(0, 0);
             this.gc任务表体.MainView = this.gv任务表体;
             this.gc任务表体.Name = "gc任务表体";
-            this.gc任务表体.Size = new System.Drawing.Size(550, 126);
+            this.gc任务表体.Size = new System.Drawing.Size(592, 126);
             this.gc任务表体.TabIndex = 0;
             this.gc任务表体.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv任务表体,
@@ -549,7 +548,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(550, 44);
+            this.panel2.Size = new System.Drawing.Size(592, 44);
             this.panel2.TabIndex = 0;
             // 
             // btn转发

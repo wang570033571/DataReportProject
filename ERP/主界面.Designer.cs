@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(主界面));
             this.mmu主菜单 = new System.Windows.Forms.MenuStrip();
             this.ssData = new System.Windows.Forms.StatusStrip();
@@ -41,14 +40,14 @@
             this.lbl内存占用 = new System.Windows.Forms.ToolStripStatusLabel();
             this.sslbl内存占用 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tm1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.cm菜单页 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.timer1 = new System.Windows.Forms.Timer();
+            this.tm1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
+            this.cm菜单页 = new System.Windows.Forms.ContextMenuStrip();
             this.关闭ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关闭其他ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关闭全部ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nf1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.cmnf = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.nf1 = new System.Windows.Forms.NotifyIcon();
+            this.cmnf = new System.Windows.Forms.ContextMenuStrip();
             this.主界面ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ssData.SuspendLayout();
@@ -91,8 +90,8 @@
             // 
             this.sslbl服务器.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
             this.sslbl服务器.Name = "sslbl服务器";
-            this.sslbl服务器.Size = new System.Drawing.Size(47, 21);
-            this.sslbl服务器.Text = "local()";
+            this.sslbl服务器.Size = new System.Drawing.Size(39, 21);
+            this.sslbl服务器.Text = "local";
             // 
             // lbl操作员
             // 
@@ -185,7 +184,7 @@
             // 
             this.nf1.ContextMenuStrip = this.cmnf;
             this.nf1.Icon = ((System.Drawing.Icon)(resources.GetObject("nf1.Icon")));
-            this.nf1.Text = "PAS";
+            this.nf1.Text = "Report";
             this.nf1.Visible = true;
             this.nf1.DoubleClick += new System.EventHandler(this.nf1_DoubleClick);
             // 
@@ -224,11 +223,11 @@
             this.MainMenuStrip = this.mmu主菜单;
             this.Name = "主界面";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SHS-ERP";
+            this.Text = "报表管理系统_Report";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmMain_Load);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.主界面_FormClosed);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.主界面_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.主界面_FormClosed);
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ssData.ResumeLayout(false);
             this.ssData.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tm1)).EndInit();

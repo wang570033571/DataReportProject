@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(退出系统));
             this.btn退出 = new System.Windows.Forms.Button();
             this.btn取消 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -86,6 +87,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn取消);
             this.Controls.Add(this.btn退出);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "退出系统";
             this.Text = "退出系统";
             this.ResumeLayout(false);
